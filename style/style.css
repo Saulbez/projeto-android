@@ -1,0 +1,216 @@
+@charset "UTF-8";
+   
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../pacote-projeto-d010/fontes/idroid.otf');
+    font-weight: normal;
+}
+
+/*
+#C9FFCD
+#B3D5B5
+#73AA77
+#418045
+#1D5521
+#063d1e
+*/
+
+:root {
+
+    --cor0: #c9ffcd;
+    --cor1: #b3d5b5;
+    --cor2: #73aa77;
+    --cor3: #418045;
+    --cor4: #1d5521;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Titillium', Arial;
+    --fonte-android: 'Android', Arial;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo:after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); 
+    min-height: 200px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 15px;
+    font-size: 48px;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.432);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.432);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 8px 12px 2px rgba(0, 0, 0, 0.397);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.4s;
+}
+
+main {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 800px;
+    min-width: 320px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.08em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+width: 100%;
+}
+
+main img.pequeno {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+font-family: var(--fonte-android);
+color: var(--cor4);
+font-size: 1.5em;
+background-image: linear-gradient(to right, var(--cor1), transparent);
+text-indent: 8px;
+font-weight: normal;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div > iframe {
+    position: absolute;
+    top: 2.4%; /* Distância do canto superior esquerdo do iframe em relação a extremidade superior do bloco div */
+    left: 2.5%; /* Distância do canto superior esquerdo do iframe em relação a extremidade esquerda do bloco div */
+    width: 95%; /* largura da div que o iframe ocupará */
+    height: 95%; /* altura da div que o iframe ocupará */
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.425);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside; /* Faz com que as marcações da lista fiquem dentro do bloco */
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'; /* 2714 é o código do emoji de check mark e 00A0 é utilizado para dar espaçamento antes e depois*/
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
